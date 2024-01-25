@@ -1,0 +1,32 @@
+.layout {
+    width: 1366px;
+    height: 768px;
+  
+    display: grid;
+    grid:
+      "span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12 span12" 1fr
+      "span6 span6 span6 span6 span6 span6 . . . . . ." 1fr
+      ". . . . . span3 span3 span3 . . . ." 1fr
+      ". . . . span1 . . . . . . ." 1fr
+      / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+  }
+  
+  .span12 { grid-area: span12; }
+  .span6 { grid-area: span6; }
+  .span3 { grid-area: span3; }
+  .span1 { grid-area: span1; }
+;
+.skewed {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 0;
+    transform: skewY(6deg);
+    transform-origin: top right;
+  }
