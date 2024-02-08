@@ -1,5 +1,13 @@
+//PRIMER ENTREGA
+
+
+
+
+
+
 // BARCFLIX - CLON DE NETFLIX
 //INICIAR SESIÓN
+
 
 // let iniciarSesion = prompt("¿Iniciaste sesión? Respondé si o no.")
 
@@ -69,6 +77,12 @@
 //     console.log("pelicula número:", i)
 // };
 
+
+
+
+//SEGUNDA ENTREGA
+
+// FORMA DE CODIGO N°1
 
 // //FUNCIONES 1
 // function peliculasTerrorNuevas() {
@@ -223,6 +237,12 @@
 
 // // Array de directores
 // const directores = ["Alfred Hitchcock", "William Friedkin", "Ridley Scott", "Steven Spielberg", "Stanley Kubrick", "James Cameron"];
+
+
+
+
+
+// FORMA DE CODIGO N°2
 
 const peliculas = {
     Terror: [
