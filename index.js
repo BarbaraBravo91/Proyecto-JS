@@ -151,8 +151,19 @@ const peliculas = [
       { nombre: "El Viaje de Chihiro", año: 2001, directores: "Hayao Miyazaki",genero: "animadas"  },
       { nombre: "Aladdin", año: 1992, directores: "Ron Clements, John Musker",genero: "animadas"  },
       { nombre: "Up", año: 2009, directores: "Pete Docter, Bob Peterson",genero: "animadas"  },
-      { nombre: "La Sirenita", año: 1989, directores: "Ron Clements, John Musker",genero: "animadas"  }
+      { nombre: "La Sirenita", año: 1989, directores: "Ron Clements, John Musker",genero: "animadas"  },
+      { nombre: "El Mago de Oz", año: 1939, directores: "Victor Fleming, King Vidor",genero: "fantasia"  },
+      { nombre: "El Señor de los Anillos: La Comunidad del Anillo", año: 2001, directores: "Peter Jackson",genero: "fantasia"  },
+      { nombre: "Harry Potter y la Piedra Filosofal", año: 2001, directores: "Chris Columbus" ,genero: "fantasia" },
+      { nombre: "Laberinto", año: 1986, directores: "Jim Henson",genero: "fantasia"  },
+      { nombre: "El Viaje de Chihiro", año: 2001, directores: "Hayao Miyazaki",genero: "fantasia"  },
+      { nombre: "La Historia sin Fin", año: 1984, directores: "Wolfgang Petersen",genero: "fantasia"  },
+      { nombre: "El Laberinto del Fauno", año: 2006, directores: "Guillermo del Toro",genero: "fantasia" },
+      { nombre: "Alice in Wonderland", año: 1951, directores: "Clyde Geronimi, Wilfred Jackson" ,genero: "fantasia" },
+      { nombre: "Coco", año: 2017, directores: "Lee Unkrich, Adrian Molina",genero: "fantasia"  },
+      { nombre: "El Castillo Ambulante", año: 2004, directores: "Hayao Miyazaki",genero: "fantasia"  }
 ]
+console.log (peliculas)
 
    const disney = [
       { nombre: "Blanca Nieves y los Siete Enanitos", año: 1937, directores: "David Hand y William Cottrell" },
@@ -167,35 +178,16 @@ const peliculas = [
       { nombre: "El Libro de la Selva", año: 1967, directores: "Wolfgang Reitherman" }
     ]
    
-    const fantasia= [
-      { nombre: "El Mago de Oz", año: 1939, directores: "Victor Fleming, King Vidor" },
-      { nombre: "El Señor de los Anillos: La Comunidad del Anillo", año: 2001, directores: "Peter Jackson" },
-      { nombre: "Harry Potter y la Piedra Filosofal", año: 2001, directores: "Chris Columbus" },
-      { nombre: "Laberinto", año: 1986, directores: "Jim Henson" },
-      { nombre: "El Viaje de Chihiro", año: 2001, directores: "Hayao Miyazaki" },
-      { nombre: "La Historia sin Fin", año: 1984, directores: "Wolfgang Petersen" },
-      { nombre: "El Laberinto del Fauno", año: 2006, directores: "Guillermo del Toro" },
-      { nombre: "Alice in Wonderland", año: 1951, directores: "Clyde Geronimi, Wilfred Jackson" },
-      { nombre: "Coco", año: 2017, directores: "Lee Unkrich, Adrian Molina" },
-      { nombre: "El Castillo Ambulante", año: 2004, directores: "Hayao Miyazaki" }
-    ]
 
   
-   
+   console.log (disney)
+
  
-// Sort- ordenar peliculas por orden alfabético 
-for (let genero in peliculas) {
-    peliculas[genero].sort((a, b) => {
-      return a.nombre.localeCompare(b.nombre);
-    });
-  }
+// Sort- Ordenar películas por orden alfabético
+peliculas.sort((a, b) => {
+    return a.nombre.localeCompare(b.nombre);
+  });
   
-  // Mostrar películas ordenadas alfabéticamente
-  for (let genero in peliculas) {
-    console.log(`Películas de ${genero}:`);
-    peliculas[genero].forEach(pelicula => {
-      console.log(`- ${pelicula.nombre}`);
-    });
-  }
+  console.log(peliculas);
   
 
