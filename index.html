@@ -1,27 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="CSS/estilos.css">
+     <title>BARFLIX</title>
+
    
-    <link rel="stylesheet" href="../proyecto_final/CSS/estilo.css">
-
-    <title>BARFLIX</title>
+     
 </head>
-<body>
-    <H1>BARFLIX</H1>
-    <div class="relative h-full w-full bg-black">
-        <div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-        <div class="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full bg-[radial-gradient(circle_400px_at_50%_300px,#fbfbfb36,#000)]"></div></div>
-    
-        <section class="layout"  class="skewed">
-            <div class="span12">1</div>
-            <div class="span6">2</div>
-            <div class="span3">3</div>
-            <div class="span1">4</div>
-            <div></div>
-          </section>
 
-          <script src="./index.js"></script>
+<body class="colores" >
+    
+
+
+    
+    <H1> COMUNIDAD BARFLIX</H1>
+    <h2>Amantes de los clásicos </h2>
+   
+    
+
+    <section class="layout" class="skewed">
+        <div class="span12">1</div>
+        <div class="span6">2</div>
+        <div class="span3">3</div>
+        <div class="span1">4</div>
+        <div></div>
+    </section>
+
+    <form id="registroPersona">
+        <h1>Registro</h1>
+        <h2>Completá el formulario si sos team clásicos</h2>
+        <label for="nombrePersona" class="btn1 ">Nombre:</label>
+        <input type="text" id="nombrePersona" required>
+        <label for="apellidoPersona">Apellido:</label>
+        <input type="text" id="apellidoPersona" required>
+        <label for="mayorDeEdad">Edad:</label>
+        <input type="text" id = "mayorDeEdad" required>
+        <label for="emailPersona">Email:</label>
+        <input type="email" id="emailPersona" required>
+
+        <button type="submit">¡Quiero asociarme!</button>
+
+        <span>Ingresá un correo válido</span>
+        <span>Tenés que ser mayor de edad!</span>
+    </form>
+
+    <button id="btn" class="btn">Hacer clic</button>
+    <button id="cambiarBC">Cambiar fondo</button>
+    <nav>
+        <button id="menuBoton">Preguntas frecuentes</button>
+        <ul id="menu" class="navbar">
+
+            <li><a href="">¿Qué es BARFLIX?</a></li>
+            <li><a href="">¿Cuánto cuesta?</a></li>
+            <li><a href="">¿Cómo cancelo?</a></li>
+            <li><a href="">¿Dónde puedo mirar?</a></li>
+        </ul>
+    </nav>
+    !--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./index.js"></script>
+
 </body>
+
 </html>
