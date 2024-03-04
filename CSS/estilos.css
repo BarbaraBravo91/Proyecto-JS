@@ -1,18 +1,4 @@
 
-.skewed {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    z-index: 0;
-    transform: skewY(6deg);
-    transform-origin: top right;
-  }
-
 
 .colores{
   color: aliceblue;
@@ -20,26 +6,10 @@
 
 }
 
-.tamañoFotos{
-  width: 80%;
-  max-width: 1000px;
-  height: 400px; 
-  margin: 0 auto; 
-  overflow: hidden; 
-}
-
-.colorCarrusel{
-  color:antiquewhite;
-
-}
-
-
 
 body {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
-  background-size: cover;
-   background-image: url('../imagenes/Minimalist\ Inspirational\ Social\ Media\ Grid\ Photo\ Collage\ Instagram\ Post\ \(1\).png');
-    
+  color: antiquewhite;
+   background-size: cover;
     background-size: cover;
     background-position: center;
     background-color: #f8f8f8; 
@@ -55,4 +25,15 @@ h1 {
   margin: 0 auto;
   max-width: 800px;
   background-color: rgba(255, 255, 255, 0.8); 
+}
+
+h1 {
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+.menuBoton{
+  color: aliceblue;
 }

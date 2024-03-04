@@ -217,43 +217,41 @@ menuBoton.onclick = function () {
 
 //Registro Persona
 
-let nombrePersonaInput = document.getElementById("nombrePersona").value;
-let apellidoInput = document.getElementById("apellidoPersona").value;
-let mayorDeEdadInput = document.getElementById("mayorDeEdad").value;
-let mayorDeEdadErrorInput = document.getElementById("mayorDeEdadError").value;
-let emailInput = document.getElementById("emailPersona").value;
-let emailErrorInput = document.getElementById("emailError").value;
+let form = document.getElementById("registroPersona")
 
-emailInput.addEventListener('input', function () {
-   if (!this.validity.valid) {
-      emailError.style.display = 'block';
+form.addEventListener("submit", (e) => {
+   e.preventDefault();
+   let nombrePersonaInput = document.getElementById("nombrePersona").value;
+   let apellidoInput = document.getElementById("apellidoPersona").value;
+   let mayorDeEdadInput = document.getElementById("mayorDeEdad").value;
+   let emailInput = document.getElementById("emailPersona").value;
+
+   if (mayorDeEdadInput < 18) {
+      alert('No puedes registrarte, porque eres menor de edad')
    } else {
-      emailError.style.display = 'none';
+      const { value: formValues } = Swal.fire({
+         title: "Nombre y apellido",
+         html: `
+              <input id="swal-input1" class="swal2-input">
+              <input id="swal-input2" class="swal2-input">
+            `,
+         focusConfirm: false,
+         preConfirm: () => {
+            return [
+               document.getElementById("swal-input1").value,
+               document.getElementById("swal-input2").value
+            ];
+         }
+      });
+      if (formValues) {
+         Swal.fire(JSON.stringify(formValues));
+      }
    }
-}
-)
-
-mayorDeEdadInput.addEventListener('input', function()
-{ if(mayorDeEdadInput.value < 18) 
-   alert('No puedes registrarte, porque eres menor de edad')
 })
 
+ const botonAlerta = document.getElementById ('botonAlerta')
 
+ botonAlerta.addEventListener ('click',()=>{
 
-const { value: formValues } = await Swal.fire({
-   title: "Nombre y apellido",
-   html: `
-     <input id="swal-input1" class="swal2-input">
-     <input id="swal-input2" class="swal2-input">
-   `,
-   focusConfirm: false,
-   preConfirm: () => {
-     return [
-       document.getElementById("swal-input1").value,
-       document.getElementById("swal-input2").value
-     ];
-   }
- });
- if (formValues) {
-   Swal.fire(JSON.stringify(formValues));
- }
+Swal.fire("Película agregada")})
+
